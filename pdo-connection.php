@@ -1,11 +1,11 @@
 <?php
 //The Front End of the website is using PDO connection,
 //and the /admin/ side of the site is using mysqli
-DEFINE ('DB_USER', 'ysadrivi_sam422');
-DEFINE ('DB_PASSWORD', 'LswqdDbnm23!yu');
+DEFINE ('DB_USER', ' your db user');
+DEFINE ('DB_PASSWORD', 'your db pass');
 DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'ysadrivi_sam');
-DEFINE ('DB_DSN', 'mysql:host=localhost;dbname=ysadrivi_sam');
+DEFINE ('DB_NAME', 'xxxxx');
+DEFINE ('DB_DSN', 'mysql:host=localhost;dbname=xxxxx');
 
 
 //db connection class using singleton pattern
