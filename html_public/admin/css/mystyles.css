@@ -1,0 +1,199 @@
+/*********** END OF SUPERFISH MENU STYLES **********/
+/*********** END OF SUPERFISH MENU STYLES **********/
+
+/********* ESSENTIAL STYLES ********/
+.sf-menu, 
+.sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.sf-menu > li {
+    float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.sf-menu {
+	float: left;
+	margin-bottom: 1em;
+        margin-top: 1em;
+}
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; 
+}
+.sf-menu a {
+    border: 1px white solid;
+	padding: .75em 1em;
+	text-decoration: none;
+	zoom: 1; 
+}
+.sf-menu a {
+	color: #fff;
+}
+.sf-menu li {
+	background:#2B84BF; 
+	white-space: nowrap; 
+	*white-space: normal; 
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu ul li {
+	background: #2B84BF;
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	
+	-webkit-transition: none;
+	transition: none;
+}
+
+.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; 
+}
+
+.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+
+/*********** END OF SUPERFISH MENU STYLES **********/
+/*********** END OF SUPERFISH MENU STYLES **********/
+
+
+
+li a {
+    font-size:  small;
+}
+
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing 
+    div. The remaining bottom margin will hold it away from any elements that follow. */
+    padding-right: 15px;
+    padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs 
+    themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+a img { 
+    border: none;
+}
+
+/*---------------------------------------------------
+ this container surrounds all other divs giving them 
+ their percentage-based width 
+ --------------------------------------------------- */
+.container {
+    width: 86%;
+    max-width: 1260px;   
+    background-color: #FFF;
+    margin: 0 auto; 
+    box-shadow: 5px 5px 5px #888888;	
+    border:1px solid #CCC;
+}
+
+
+.header {   
+    
+    min-height: 60px;
+    margin-bottom: 1em;
+}
+
+
+/*----------------------------------------------------------------
+This grouped selector gives the lists in the .content area space 
+---------------------------------------------------------------- */
+.content ul, 
+.content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. 
+	Padding was placed on the bottom for space between other elements on the lists and on the left to create the 
+	indention. These may be adjusted as you wish. */
+}
+
+
+/*------------------- 
+ The footer 
+ ------------------ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+}
+
+/*------------------------------------- 
+ miscellaneous float/clear classes 
+ ------------------------------------- */
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+p.hp {
+    display: none;
+}
+
+
+
+.btn {
+    color: #ffffff;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;   
+    text-align: center;
+    width: 130px;
+    padding:5px;
+    margin: 5px;    
+}
+
